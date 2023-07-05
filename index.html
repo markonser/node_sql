@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js Express REST API</title>
+</head>
+
+<body>
+  <!-- action="http://localhost:3002/mistakes" method="post" -->
+  <form id='form' enctype="multipart/form-data">
+    <label>Судья принявший решение
+      <input type="text" name="surname" id="surname">
+    </label><br>
+    <label>Место принятия решения
+      <input type="text" name="address" id="address">
+    </label><br>
+    <label>Номер дела
+      <input type="text" name="delo" id="delo">
+    </label><br>
+    <label>Краткое описание неправильности решения
+      <input type="text" name="title" id="title">
+    </label><br>
+    <label>Что нарушено
+      <input type="text" name="law" id="law">
+    </label><br>
+    <label>Файл в формате PDF
+      <input type="file" name="file" id="file">
+    </label><br>
+
+    <input id='send' type="submit" value="Upload">
+  </form>
+
+  <div class="out"></div>
+  <script src="send-form.js"></script>
+
+
+</body>
+
+</html>
